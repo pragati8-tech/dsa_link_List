@@ -191,38 +191,70 @@
 
 //-----------deleting the last element------------------
 
+// class Node{
+//     constructor(data){
+//         this.data =data
+//         this.next=null
+//     }
+// }
+// let head = new Node(1)
+// let firstNode = new Node(2)
+// let secondNode = new Node(3)
+
+//  head.next=firstNode
+// firstNode.next=secondNode
+
+// function deletingLast(){
+//     if(head ==null){
+//         console.log("list is empty")
+//         return
+//     }
+//     if(head.next ==null){
+//         return
+//     } 
+//     let curr = head
+//     while(curr.next.next !=null){
+//         curr=curr.next 
+//     }
+//     let end = curr.next 
+//     curr.next = null  
+//     end = null  
+// }
+// deletingLast()
+// function display(head){
+//     let curr = head
+//     while(curr !==null){
+//         console.log(curr.data)
+//         curr = curr.next
+//     }
+// }
+// display(head)
+
+//---------doublyLinkList----------------------------(doubt)
+
 class Node{
     constructor(data){
-        this.data =data
-        this.next=null
+        this.data = data
+        this.next = null
+        this.prev = null
     }
 }
-let head = new Node(1)
-let firstNode = new Node(2)
-let secondNode = new Node(3)
-
- head.next=firstNode
-firstNode.next=secondNode
-
-function deletingLast(){
-    if(head ==null){
-        console.log("list is empty")
+var head
+function doubly(data){
+    let newNode = new Node(data)
+    if(head==null){
+        head = newNode
         return
     }
-    if(head.next ==null){
-        return
-    } 
-    let curr = head
-    while(curr.next.next !=null){
-        curr=curr.next 
-    }
-    let end = curr.next 
-    curr.next = null  
-    end = null  
+    newNode.next = head 
+    head.prev = newNode 
+    head = newNode 
 }
-deletingLast()
+doubly(1)
+doubly(2)
+
 function display(head){
-    let curr = head
+    let curr =head
     while(curr !==null){
         console.log(curr.data)
         curr = curr.next
@@ -230,3 +262,27 @@ function display(head){
 }
 display(head)
 
+//-------------finding middle element---------------------
+
+class Node{
+    constructor(data){
+        this.data = data
+        this.next = null
+    }
+}
+
+function push(data){
+    //make a new node
+    let newNode = new Node(data)
+    newNode.next = head
+    head = newNode
+}
+let head = null
+
+function findingMiddle(){
+    // initialize counter
+
+    // initialize mid to head
+
+    // looping head.next !== null
+}
