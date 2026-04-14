@@ -1,7 +1,9 @@
+//length of linkList
+
 class Node{
     constructor(data){
-        this.data =data
-        this.next = null
+        this.data = data;
+        this.next = null;
     }
 }
 let head = new Node(10)
@@ -12,14 +14,41 @@ let forthNode = new Node(50)
 head.next = firstNode
 firstNode.next = secondNode
 secondNode.next = thirdNode
+thirdNode.next = forthNode
+let count=0
+function getCount(head){
+    for(let i=head;i != null; i=i.next){
+count++
+}
+return count
+}
+console.log(getCount(head))
 
-forthNode.next = head
-head = forthNode
-console.log(head)
 
-    for(let i=head;i != null;i=i.next){
-        console.log(i.data)
-    }
+
+
+// class Node{
+//     constructor(data){
+//         this.data =data
+//         this.next = null
+//     }
+// }
+// let head = new Node(10)
+// let firstNode = new Node(20)
+// let secondNode = new Node(30)
+// let thirdNode = new Node(40)
+// let forthNode = new Node(50)
+// head.next = firstNode
+// firstNode.next = secondNode
+// secondNode.next = thirdNode
+
+// forthNode.next = head
+// head = forthNode
+// console.log(head)
+
+//     for(let i=head;i != null;i=i.next){
+//         console.log(i.data)
+//     }
 
 
 

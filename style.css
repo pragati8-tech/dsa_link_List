@@ -1,0 +1,36 @@
+.box1{
+    height: 100px;
+    width:200px;
+    background-color: aquamarine;
+}
+.box2{
+    height: 100px;
+    width:200px;
+    background-color: rgb(163, 176, 172);
+}
+.box3{
+    height: 100px;
+    width:200px;
+    background-color: rgb(44, 5, 49);
+}
+.box4{
+    height: 100px;
+    width:200px;
+    background-color: rgb(177, 141, 22);
+}
+.box5{
+    height: 100px;
+    width:200px;
+    background-color: rgb(69, 123, 94);
+}
+.box6{
+    height: 100px;
+    width:200px;
+    background-color: rgb(127, 50, 137);
+}
+.container{
+    display: grid;
+    background-color: brown;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
