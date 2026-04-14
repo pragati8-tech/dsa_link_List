@@ -1,15 +1,15 @@
 
 
-function fibonacci(n){
-    if(n==0){
-        return 0
-    }
-    if(n==1){
-        return 1
-    }
-    return fibonacci(n-1) + fibonacci(n-1)
-}
-console.log(fibonacci(10))
+// function fibonacci(n){
+//     if(n==0){
+//         return 0
+//     }
+//     if(n==1){
+//         return 1
+//     }
+//     return fibonacci(n-1) + fibonacci(n-1)
+// }
+// console.log(fibonacci(10))
 // $ node Fi-bo-na-c-ci.js 
 // 512
 

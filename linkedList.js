@@ -1,3 +1,27 @@
+class Node{
+    constructor(data){
+        this.data =data
+        this.next = null
+    }
+}
+let head = new Node(10)
+let firstNode = new Node(20)
+let secondNode = new Node(30)
+let thirdNode = new Node(40)
+let forthNode = new Node(50)
+head.next = firstNode
+firstNode.next = secondNode
+secondNode.next = thirdNode
+
+forthNode.next = head
+head = forthNode
+console.log(head)
+
+    for(let i=head;i != null;i=i.next){
+        console.log(i.data)
+    }
+
+
 
 //------------ Traverse the element--------------------
 // class Node{
@@ -232,57 +256,57 @@
 
 //---------doublyLinkList----------------------------(doubt)
 
-class Node{
-    constructor(data){
-        this.data = data
-        this.next = null
-        this.prev = null
-    }
-}
-var head
-function doubly(data){
-    let newNode = new Node(data)
-    if(head==null){
-        head = newNode
-        return
-    }
-    newNode.next = head 
-    head.prev = newNode 
-    head = newNode 
-}
-doubly(1)
-doubly(2)
+// class Node{
+//     constructor(data){
+//         this.data = data
+//         this.next = null
+//         this.prev = null
+//     }
+// }
+// var head
+// function doubly(data){
+//     let newNode = new Node(data)
+//     if(head==null){
+//         head = newNode
+//         return
+//     }
+//     newNode.next = head 
+//     head.prev = newNode 
+//     head = newNode 
+// }
+// doubly(1)
+// doubly(2)
 
-function display(head){
-    let curr =head
-    while(curr !==null){
-        console.log(curr.data)
-        curr = curr.next
-    }
-}
-display(head)
+// function display(head){
+//     let curr =head
+//     while(curr !==null){
+//         console.log(curr.data)
+//         curr = curr.next
+//     }
+// }
+// display(head)
 
 //-------------finding middle element---------------------
 
-class Node{
-    constructor(data){
-        this.data = data
-        this.next = null
-    }
-}
+// class Node{
+//     constructor(data){
+//         this.data = data
+//         this.next = null
+//     }
+// }
 
-function push(data){
-    //make a new node
-    let newNode = new Node(data)
-    newNode.next = head
-    head = newNode
-}
-let head = null
+// function push(data){
+//     //make a new node
+//     let newNode = new Node(data)
+//     newNode.next = head
+//     head = newNode
+// }
+// let head = null
 
-function findingMiddle(){
+// function findingMiddle(){
     // initialize counter
 
     // initialize mid to head
 
     // looping head.next !== null
-}
+// }
