@@ -1,25 +1,25 @@
-class Node{
-    constructor(data){
-        this.data =data
-        this.next = null
-    }
-}
-let head = new Node(10)
-let firstNode = new Node(20)
-let secondNode = new Node(30)
-let thirdNode = new Node(40)
-let forthNode = new Node(50)
-head.next = firstNode
-firstNode.next = secondNode
-secondNode.next = thirdNode
+// class Node{
+//     constructor(data){
+//         this.data =data
+//         this.next = null
+//     }
+// }
+// let head = new Node(10)
+// let firstNode = new Node(20)
+// let secondNode = new Node(30)
+// let thirdNode = new Node(40)
+// let forthNode = new Node(50)
+// head.next = firstNode
+// firstNode.next = secondNode
+// secondNode.next = thirdNode
 
-forthNode.next = head
-head = forthNode
-console.log(head)
+// forthNode.next = head
+// head = forthNode
+// console.log(head)
 
-    for(let i=head;i != null;i=i.next){
-        console.log(i.data)
-    }
+//     for(let i=head;i != null;i=i.next){
+//         console.log(i.data)
+//     }
 
 
 
@@ -114,6 +114,7 @@ console.log(head)
 //     }
 // }
 // display(head)
+
 
 //=================== inserting element at the specific point of node ================================
 
@@ -310,3 +311,97 @@ console.log(head)
 
     // looping head.next !== null
 // }
+
+
+// ----------Linklist.basic2.png-------------------------------
+// class Node{
+//     constructor(data){
+//         this.data = data,
+//         this.next = null
+//     }
+// }
+
+// let node1 = new Node(10)
+// let node2 = new Node(20)
+// let node3 = new Node(30)
+// let node4 = new Node(40)
+
+
+// node1.next = node2
+// node2.next = node3
+// node3.next = node4
+
+// let i = node1 //(we directly no use the node1 directly because reference is gone) that means node1 ka reference i ko de diya
+// let count =0 //(to count the length of the node)
+// while(i !=null){
+//     console.log(i.data);
+//     count++
+//     i = i.next
+// }
+
+// console.log(count);
+// console.log(node1);
+// // console.log(node2);
+// // console.log(node3);
+// // console.log(node4);
+
+
+class Node{
+    constructor(data){
+        this.data = data,
+        this.next = null
+    }
+}
+
+let node1 = new Node(10)
+let node2 = new Node(20)
+let node3 = new Node(30)
+let node4 = new Node(40)
+let node5 = new Node(50)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node5.next = node1
+node1 = node5
+let i = node1 
+let count =0
+while(i !=null){
+    console.log(i.data);
+    count++
+    i = i.next
+}
+
+console.log(count);
+console.log(node5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =====================================Question=========================
+//length of link list (gfg)
+// insertion at begining(gfg)
+// link list end insertion (gfg)
+// search in link list(gfg)
+// insertion at last
+//Q. Reverse the linkedlist leetcode
+
+
+
+
+
+
+
+
+

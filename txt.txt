@@ -1,0 +1,115 @@
+recursion defination
+recursion defination
+#resursion is a function(some time like loop but not overall) which calls itself for different argument untill the base condition is satisfied
+# recursion is not a datastructure it is a algorithm to solve the problem
+# base for any data sturcuture.
+# we can solve the bigger problem in small small parts.
+----------------------------------------------
+printing 1 to 5
+let i =1, n=5
+function abc(i,n){
+    upper half
+    if(i>n){
+        return
+    }
+
+    lowerhalf
+    console(i)
+    abc(i+1,n) //with different argument
+}
+abc(i,n)
+
+
+recursion n function call sp t.c ==> O(n) = s.c
+we go -> n go -> n go -> n comebacke -< comeback
+
+factorial --> tc => O(n)
+            S.C =>  == variable + datastructure  RSS(recursive stack space) == O(n)
+
+fibonacci ==> tc==> 2 to the power n. sc ==> O(n)            
+---------------------------------------------------------------
+
+
+linked-list-
+        *linear data structure
+        *dynamic
+        *non continues memory location
+        * there the nodes - one is for data and second for address
+        *each node will take two memory block, first is data and second address
+        * memory address is store in HEXADECIMAL code.
+        =====================================================================
+        linked-list-
+                *data Structure(stores data) (ex. Array is linear data structure but 
+                array is continues memory location but linked list is non continues memory location).
+                in array one memory and data in their memory.
+                but linked list two mermory block first is data and second address.
+                *linear
+                *dynamic
+                *non continues memory location
+                * there the nodes - one is for data and second for address.
+                * node is consist of two memory blocks.
+                *each node will take two memory block, first is data and second address
+
+                traversing:
+                *reaching all elements
+
+                [In linked list indexes is not present]
+
+Q.Rotate Array
+Q. reverse the linked list[singly linkedd list](leetcode)
+======================================================================
+
+stack:
+stack is data structure
+arrange data in vertical linear
+LIFO || FILO both the yhings in stack
+store data in one above the other
+stack is not in bulid what we need we created thats why its not inbulid feature in it.
+it is associated with principle
+* we can do (undo redo)
+* recursion - recursion is basicaly use to solve problems(recursion is done in behind the scince(internaly))
+* browser history 
+# stack is behind is array
+stack me implimentation with the help of
+->array(we can do opearation like push pop)
+-->linkedlist(not present inbuild function)
+push
+pop
+pick
+empty
+
+=============================================================
+tree
+*non linear data structure 
+* we have node in tree.
+* pattern - store the data in hierarical pattern
+ex:-> DOM tree, Pc- desktop-disk-folder-subfolder
+* no inbuild method, it is a user defined method
+* tree has top Most node(Root Node)
+
+1) Root Node - Top Most Node
+2) Leaf/leaves Node - Bottom Node
+3) Sub-tree - leaving Top Most and / part / piece of tree is forming a sub tree
+4) Degree - how many children a node has
+5)levels - horizontally(0 based level)
+6) verticals - vertically (top most is 0, left is minus and right is positive)
+7) Ancestors(parent of parent) and descendants(child of child)  
+
+types of tree
+
+# binary tree - (0,1,2) at max any node can have two child  --> (99% of the tree will be from of binary tree) 
+#vfull binary tree - (can not have 1 child , must have either 0 or 2)
+# complete binary tree - before right child there should be always left child
+# Degenerate tree - 1 child(only one)
+# skewed tree - 1 child (only left has only left child and shown on) or (right has only right child and shown on)
+
+Travarsal 
+
+1) pre-order (root --> left --> right)
+2) In-order (left --> root --> right)
+3) POst-order (left --> right --> root)
+4) Level-order
+
+BTS -> depth (top to bottom) (tc-O(n))
+
+Binary Search tree - left < root < right (it is inorder ) inorder of BST is always sorted (tc-logN)
