@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // class Node{
 //     constructor(data){
 //         this.data =data
@@ -18,7 +18,7 @@
 // head = forthNode
 // console.log(head)
 
-=======
+// =======
 //length of linkList
 
 class Node{
@@ -67,7 +67,7 @@ console.log(getCount(head))
 // head = forthNode
 // console.log(head)
 
->>>>>>> e179738641b4289b346ead5a868abfefe7645a26
+// >>>>>>> e179738641b4289b346ead5a868abfefe7645a26
 //     for(let i=head;i != null;i=i.next){
 //         console.log(i.data)
 //     }
@@ -441,12 +441,17 @@ console.log(node5);
 
 
 // =====================================Question=========================
-//length of link list (gfg)
+//Qlength of link list (gfg)
 // insertion at begining(gfg)
 // link list end insertion (gfg)
 // search in link list(gfg)
 // insertion at last
-//Q. Reverse the linkedlist leetcode
+// delete node at first
+// delete last node
+//  middle of the link list(leetcode)
+// insert at any point
+// intersection of two link list(leetcode)
+//. Reverse the linkedlist leetcode(leetcode)
 
 
 

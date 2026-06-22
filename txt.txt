@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 recursion defination
 recursion defination
 #resursion is a function(some time like loop but not overall) which calls itself for different argument untill the base condition is satisfied
@@ -114,8 +113,6 @@ Travarsal
 BTS -> depth (top to bottom) (tc-O(n))
 
 Binary Search tree - left < root < right (it is inorder ) inorder of BST is always sorted (tc-logN)
-=======
 -->length of linkList
 -->Search in Linked List
 -->Linked List Insertion At Beginning
->>>>>>> e179738641b4289b346ead5a868abfefe7645a26
