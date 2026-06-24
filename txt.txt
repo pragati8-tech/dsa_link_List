@@ -60,7 +60,7 @@ Q. reverse the linked list[singly linkedd list](leetcode)
 ======================================================================
 
 stack:
-stack is data structure
+stack is data structure(vertical linear)
 arrange data in vertical linear
 LIFO || FILO both the yhings in stack
 store data in one above the other
@@ -75,7 +75,7 @@ stack me implimentation with the help of
 -->linkedlist(not present inbuild function)
 push
 pop
-pick
+pick(top)
 empty
 
 =============================================================
@@ -98,10 +98,10 @@ ex:-> DOM tree, Pc- desktop-disk-folder-subfolder
 types of tree
 
 # binary tree - (0,1,2) at max any node can have two child  --> (99% of the tree will be from of binary tree) 
-#vfull binary tree - (can not have 1 child , must have either 0 or 2)
+# full binary tree - (can not have 1 child , must have either 0 or 2)
 # complete binary tree - before right child there should be always left child
 # Degenerate tree - 1 child(only one)
-# skewed tree - 1 child (only left has only left child and shown on) or (right has only right child and shown on)
+        -> skewed tree - 1 child (only left has only left child and shown on) or (right has only right child and shown on)
 
 Travarsal 
 
@@ -112,7 +112,16 @@ Travarsal
 
 BTS -> depth (top to bottom) (tc-O(n))
 
-Binary Search tree - left < root < right (it is inorder ) inorder of BST is always sorted (tc-logN)
+Binary Search tree - left < root < right (it is inorder ) inorder of BST is always sorted (tc-logN)(in terms of value)
+solving BST without recursion because we are sorted that where we go left or right.
+Count Leaves in Binary Tree
+Size of Binary Tree
+Count Non-Leaf Nodes in Tree
 -->length of linkList
 -->Search in Linked List
 -->Linked List Insertion At Beginning
+
+Queue is same as stack but method is different
+ceil in bst
+prepare queue
+level order travarsal

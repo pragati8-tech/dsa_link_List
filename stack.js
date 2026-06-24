@@ -1,57 +1,57 @@
-class Stack{
-    constructor(){
-        this.arr=[]
-    }
-    push(el){
-        return this.arr.push(el)
-    }
-    pop(){
-        if(this.arr.length==0){
-            return "Satck is empty"
-        }
-        return this.arr.pop()
-    }
-    top(){
-        if(this.arr.length ==0){
-            return "Stack is empty"
-        }
-        return this.arr[this.arr.length-1]
-    }
-    isEmpty(){
-        return this.arr.length ==0
-    }
-}
-let s = new Stack()
-let str ="(())"
+// class Stack{
+//     constructor(){
+//         this.arr=[]
+//     }
+//     push(el){
+//         return this.arr.push(el)
+//     }
+//     pop(){
+//         if(this.arr.length==0){
+//             return "Satck is empty"
+//         }
+//         return this.arr.pop()
+//     }
+//     top(){
+//         if(this.arr.length ==0){
+//             return "Stack is empty"
+//         }
+//         return this.arr[this.arr.length-1]
+//     }
+//     isEmpty(){
+//         return this.arr.length ==0
+//     }
+// }
+// let s = new Stack()
+// let str ="(())"
 
-function validPara(str){
-        if(str.length%2 !==0){
-            return false
-        }
-        for(let i =0;i<str.length;i++){
-            if(str[i]=="("){
-                s.push(str[i])
-            } else{
-                if(s.isEmpty()){
-                    return false
-                } else{
-                    s.pop()
-                }
-            }
-        }
-        if(s.isEmpty())
-        {
-            return true
-        }
-        return false
-}
+// function validPara(str){
+//         if(str.length%2 !==0){
+//             return false
+//         }
+//         for(let i =0;i<str.length;i++){
+//             if(str[i]=="("){
+//                 s.push(str[i])
+//             } else{
+//                 if(s.isEmpty()){
+//                     return false
+//                 } else{
+//                     s.pop()
+//                 }
+//             }
+//         }
+//         if(s.isEmpty())
+//         {
+//             return true
+//         }
+//         return false
+// }
 
-let result = validPara(str)
-if(result){
-    console.log("valid Para");
-} else{
-    console.log("invalid Para");
-}
+// let result = validPara(str)
+// if(result){
+//     console.log("valid Para");
+// } else{
+//     console.log("invalid Para");
+// }
 
 
 
@@ -380,3 +380,32 @@ if(result){
 
 //     }
 // }
+
+
+
+class Stack{
+    constructor(){
+        this.arr=[]
+    }
+    push(el){
+         this.arr.push(el)
+    }
+    pop(){
+        if(this.arr.length ==0){
+            return "stack is empty"
+        }
+        this.arr.pop()
+    }
+    empty(){
+        return this.arr.length == 0
+    }
+    top(){
+        if(this.arr.length == 0){
+            return "Stack is empty"
+        }
+        return this.arr[this.arr.length-1]
+    }
+}
+let s = new Stack()
+// s.push(12)
+console.log(s);
